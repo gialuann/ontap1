@@ -6,6 +6,7 @@ import {Routes, Route, Link, useNavigate} from 'react-router-dom'
 import styled from 'styled-components';
 import Bimcal from './components/Bim'
 import VideoPlayer from './components/video-player';
+import Profile from './components/profile';
 
 const WrapperMenu = styled('div')`
   border: 1px solid blue;
@@ -27,7 +28,7 @@ function App() {
   }
   return (
     <div className="App">
-      
+       <Profile/>
       <WrapperMenu>
 
        <Button onClick={handleBIMcalculateClick}>BIM Calculator</Button>
@@ -45,7 +46,9 @@ function App() {
      <Route path='/Bim' element={<Bimcal/>} />
      <Route path='/video-player' element={<VideoPlayer/>} />
    </Routes>
+  
    </div>
+   
   );
 }
 

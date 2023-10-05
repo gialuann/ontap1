@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Video from '.video'
+import Video from './video'
 import Menu from "./menu"
 
 const VIDEO_SOURCES = [
@@ -25,7 +25,7 @@ const VIDEO_SOURCES = [
     }
 ]
 function VideoPlayer() {
-    const [selectedVideo, setSelectedVideo] = useState(VIDEO_SOURCES(0))
+    const [selectedVideo, setSelectedVideo] = useState(VIDEO_SOURCES[0])
 
     function onSelectVideo(e) {
         const selectedVideokey = e.target.value
